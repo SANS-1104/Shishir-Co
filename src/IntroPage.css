@@ -8,3 +8,34 @@
 .s-btn:hover{
     text-decoration: underline;
 }
+
+.a{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    left: -8.5px;
+    top: 0.01px;
+    margin-right: 0.5rem;
+    background: linear-gradient(47.19deg, #9C53F9 14.44%, #F1E8FF 86.22%);
+    border-radius: 0px 20px;
+}
+
+
+.support-img-cont .si .each{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    flex-direction: column;
+    padding: 0.1rem 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: transform 3s ease-in-out 0;
+}
+
+.support-img-cont .si .each:hover{
+    transform: scale(1.2);
+    box-shadow:none;
+    border:2px solid black;
+}
+
