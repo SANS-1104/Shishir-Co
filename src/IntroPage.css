@@ -1,0 +1,10 @@
+.text-color{
+    color: #022083;
+}
+.btn-bg{
+    background-color: #426EFF;
+}
+
+.s-btn:hover{
+    text-decoration: underline;
+}
