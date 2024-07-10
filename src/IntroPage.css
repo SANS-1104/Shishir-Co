@@ -65,8 +65,8 @@
         margin-top: 1rem;
     }
     .support-img-cont .si{
-        grid-gap: 5rem;
-    }
+        transform: scale(0.5);
+     }
 }
 
 @media (max-width: 640px) {
@@ -87,7 +87,7 @@
         margin-top: 1rem;
     }
     .support-img-cont .si{
-        grid-gap: 1rem;
+       transform: scale(0.3);
     }
 }
 
@@ -105,12 +105,12 @@
         
     }
     .support-img-cont{
-        width: 150%;
+        width: 100%;
         margin-top: 1rem;
     }
     .support-img-cont .si{
-        grid-gap: 1rem;
-    }
+        transform: scale(0.2);
+     }
 }
 
 
@@ -131,7 +131,3 @@
     }
 }
 
-
-.support-img-cont{
-    width: 50%;
-}
