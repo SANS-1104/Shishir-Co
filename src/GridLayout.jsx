@@ -3,7 +3,15 @@
 import React from "react";
 import LayoutGrid from "./components/ui/LayoutGrid";
 import { transform } from "framer-motion";
-import imageone from './assets/person.jpg';
+import imageone from './assets/emp1.jpg';
+import imagetwo from './assets/emp2.jpeg';
+import imagethree from './assets/emp3.avif';
+import imagefour from './assets/emp4.jpg';
+import imagefive from './assets/emp5.webp';
+import imagesix from './assets/emp6.webp';
+
+
+
 
 const SkeletonOne = () => (
     <div>
@@ -76,31 +84,31 @@ const cards = [
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnail: imageone,
+    thumbnail: imagetwo,
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnail: imageone,
+    thumbnail: imagethree,
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-1",
-    thumbnail: imageone,
+    thumbnail: imagefour,
   },
   {
     id: 5,
     content: <SkeletonFive />,
     className: "md:col-span-1",
-    thumbnail: imageone,
+    thumbnail: imagefive,
   },
   {
     id: 6,
     content: <SkeletonSix />,
     className: "md:col-span-1",
-    thumbnail: imageone,
+    thumbnail: imagesix,
   },
 ];
 

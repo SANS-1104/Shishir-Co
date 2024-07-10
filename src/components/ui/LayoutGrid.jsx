@@ -21,7 +21,7 @@ export default function LayoutGrid({ cards }) {
   };
 
   return (
-    <div className="w-full h-full p-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 max-w-full max-h-full mx-auto gap-auto relative">
+    <div className="w-full h-full p-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 max-w-full max-h-full mx-auto  gap-auto relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "relative")}>
           <motion.div
@@ -32,8 +32,8 @@ export default function LayoutGrid({ cards }) {
               selected?.id === card.id
                 ? "rounded-lg cursor-pointer absolute inset-0 h-auto w-auto m-auto z-50 flex justify-center items-center flex-wrap flex-col border-4 border-black bg-white"
                 : lastSelected?.id === card.id
-                ? "z-40 bg-white rounded-xl h-full w-full"
-                : "bg-white rounded-xl h-full w-full"
+                ? "z-40 bg-white rounded-2xl h-full w-full"
+                : "bg-white rounded-2xl h-full w-full"
             )}
             layout
           >
@@ -74,7 +74,7 @@ const BlurImage = ({ card }) => {
       src={card.thumbnail}
       onLoad={() => setLoaded(true)}
       className={cn(
-        "object-contain object-center absolute inset-0 w-full h-full transition duration-200",
+        "object-contain object-center absolute inset-0 rounded-2xl  w-4/5  h-4/5 border-black transition duration-200",
         loaded ? "blur-none" : "blur-md"
       )}
       alt="thumbnail"
