@@ -1,38 +1,3 @@
-.navbar{
-    /* width: 100%; */
-    display: flex;
-    align-items: center;
-    max-height: fit-content;
-    padding: 1rem 1rem 1rem 5rem;
-    background-color: #D4E1FF;
-    color: black;
-}
-.main-logo{
-    /* width: 5rem;
-    height: 5rem; */
-    background-color: #D4E1FF;
-}
-
-.main-logo img{
-    width: 7rem;
-    height: 4rem;
-}
-
-.navbar .links{
-    color: #022083;
-}
-
-.navbar .links a{
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.navbar .links a:hover{
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #022083;
-    text-decoration: underline;
-}
 
 *{
     padding: 0;
@@ -40,27 +5,95 @@
     box-sizing: border-box;
 }
 
-.nav-btn{
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 100%;
+    z-index: 50;
+    height: fit-content;
+    background-color: #D4E1FF;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+header .logo{
+    width: 5rem;
+    height: 3rem;
+    padding: 5px;
+}
+
+nav a{
+    margin: 0 2rem;
+    color: #022083;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color:#022083;
+}
+
+
+header .nav-btn{
     padding: 5px;
     cursor: pointer;
     background: transparent;
     border: none;
     outline: none;
     visibility: hidden;
+    color: #022083;
     opacity: 0;
+    font-size: 1.8rem;
 }
 
 
+
+
 @media only screen and (max-width : 1024px) {
-    .nav-btn{
+    header .nav-btn{
         visibility: visible;
         opacity: 1;
     }
-    .navbar .links{
+    header nav{
         position: fixed;
         top: 0;
         left: 0;
+        height: 20%;
+        width: 100%;
         display: flex;
-        
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #D4E1FF;
+        z-index: 50;
+        transition: 1s;
+        transform: translateY(-100vh)      
     }
+
+    header .responsive_nav{
+        transform: none;
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+    nav a{
+        font-size: 1rem;
+        margin: 3rem 0.5rem 0;
+        font-weight: normal;
+    }
+
 }
