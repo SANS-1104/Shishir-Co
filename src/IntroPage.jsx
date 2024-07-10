@@ -1,7 +1,7 @@
 import './IntroPage.css'
 export default function IntroPage(){
     return(
-        <div className="Intro-cont flex items-center justify-center w-full h-max mb-32">
+        <div className="Intro-cont flex items-center justify-center w-full h-max mb-32 pt-28">
             <div className="intro-content-cont w-screen pt-20 px-16 flex flex-wrap items-center justify-between">
                 <div className="data w-fit flex flex-col flex-wrap justify-start items-start mr-4">
                     <div className="heading-desig text-color mb-2">

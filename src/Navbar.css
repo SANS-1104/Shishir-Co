@@ -34,3 +34,33 @@
     text-decoration: underline;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+@media only screen and (max-width : 1024px) {
+    .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+    .navbar .links{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        
+    }
+}
