@@ -5,7 +5,7 @@ import logo from './assets/logo.png';
 
 export default function Navbar(){
     return(
-        <nav className="navbar">
+        <nav className="navbar w-screen">
             <div className="navbar-container main-logo">
                 <img src={logo} alt="Logo" />
             </div>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import PropTypes from 'prop-types';
 
@@ -21,16 +21,16 @@ export default function LayoutGrid({ cards }) {
   };
 
   return (
-    <div className="w-full h-full p-20 grid grid-cols-1 md:grid-cols-3 max-w-4xl max-h-2xl mx-auto gap-16 relative">
+    <div className="w-full h-full p-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 max-w-full max-h-full mx-auto gap-auto relative">
       {cards.map((card, i) => (
-        <div key={i} className={cn(card.className, "")}>
+        <div key={i} className={cn(card.className, "relative")}>
           <motion.div
             onClick={() => handleClick(card)}
             className={cn(
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-2/3 m-auto z-50 flex justify-center items-center flex-wrap flex-col border-4 border-black bg-white"
+                ? "rounded-lg cursor-pointer absolute inset-0 h-auto w-auto m-auto z-50 flex justify-center items-center flex-wrap flex-col border-4 border-black bg-white"
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-xl h-full w-full"
                 : "bg-white rounded-xl h-full w-full"
@@ -72,11 +72,9 @@ const BlurImage = ({ card }) => {
   return (
     <img
       src={card.thumbnail}
-      height="500"
-      width="500"
       onLoad={() => setLoaded(true)}
       className={cn(
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200",
+        "object-contain object-center absolute inset-0 w-full h-full transition duration-200",
         loaded ? "blur-none" : "blur-md"
       )}
       alt="thumbnail"
