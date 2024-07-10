@@ -9,3 +9,21 @@
 .bh:hover{
     color: black;
 }
+.e:hover{
+    text-decoration: underline;
+}
+
+.f{
+    color: #0645ad;
+}
+.i{
+    color: #a44eac;
+}
+
+.l{
+    color: #0A66C2;
+}
+
+.x{
+    color: rgb(175, 168, 168);
+}

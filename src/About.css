@@ -3,5 +3,39 @@
 }
 
 .commit-btn{
-    color: #567EFF;;
+    color: #567EFF;
+    animation: top-down 5s ease-in-out 0s infinite normal both;
+}
+
+@keyframes top-down {
+    
+    0% {
+        transform: translateY(0);
+    }
+      50% {
+        transform: translateY(1rem);
+    }
+      100% {
+        transform: translateY(0);
+    }
+}
+
+
+.commit-side-img{
+    animation: move 4s infinite 0s;
+}
+
+@keyframes move {
+    0%{
+        transform: rotate(2deg);
+        translate: (2px,2px);
+    }
+    50%{
+        transform: rotate(-2deg);
+        translate: (-2px,-2px);
+    }
+    100%{
+        transform: rotate(2deg);
+        translate: (2px,2px);
+    }
 }
