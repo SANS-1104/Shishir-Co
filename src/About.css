@@ -17,6 +17,18 @@
     animation: top-down 5s ease-in-out 0s infinite normal both;
 }
 
+.bg-color{
+    background-color: #567EFF;
+}
+
+.light-color{
+    background-color: white;
+}
+
+.from-txt , .to-txt{
+    color: white;
+}
+
 @keyframes top-down {
     
     0% {

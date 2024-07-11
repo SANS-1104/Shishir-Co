@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import PropTypes from 'prop-types';
 
+
+
 // Placeholder for cn utility function
 const cn = (...classes) => classes.filter(Boolean).join(' ');
 
@@ -21,7 +23,7 @@ export default function LayoutGrid({ cards }) {
   };
 
   return (
-    <div className="w-full h-full p-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 max-w-full max-h-full mx-auto ml-5 gap-auto relative">
+    <div className="w-full h-full p-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 max-w-full max-h-full mx-auto mx-auto gap-auto relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "relative")}>
           <motion.div
@@ -30,7 +32,8 @@ export default function LayoutGrid({ cards }) {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? "rounded-lg cursor-pointer absolute inset-0 h-auto w-auto m-auto z-50 flex justify-center items-center flex-wrap flex-col border-4 border-black bg-white"
+              // outer width
+                ? "rounded-lg cursor-pointer absolute inset-0 h-auto w-max m-auto z-50 flex justify-center items-center flex-wrap flex-col border-4 text-base border-black bg-white"
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-2xl h-full w-full"
                 : "bg-white rounded-2xl h-full w-full"
@@ -74,7 +77,7 @@ const BlurImage = ({ card }) => {
       src={card.thumbnail}
       onLoad={() => setLoaded(true)}
       className={cn(
-        "object-contain object-center absolute inset-0 rounded-2xl  w-4/5  h-4/5 border-black transition duration-200",
+        "object-contain object-center absolute inset-0 rounded-2xl  w-4/5  h-4/5 transition duration-200",
         loaded ? "blur-none" : "blur-md"
       )}
       alt="thumbnail"
@@ -90,7 +93,8 @@ BlurImage.propTypes = {
 
 const SelectedCard = ({ selected }) => {
   return (
-    <div className="bg-white h-96 w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
+    // selected card here edits
+    <div className="bg-white h-max w-mx  flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.6 }}
@@ -100,7 +104,7 @@ const SelectedCard = ({ selected }) => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className="relative px-8 pb-4 z-[70]"
+        className="relative px-4 py-4 card-padding pb-4 z-[70]"
       >
         {selected?.content}
       </motion.div>
