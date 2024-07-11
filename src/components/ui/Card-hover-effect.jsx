@@ -49,7 +49,7 @@ export const Card = ({ className, children }) => {
 
 export const CardTitle = ({ className, children }) => {
   return (
-    <h4 className={cn("text-white text-xl font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-white text-xl font2 font-bold tracking-wide mt-4", className)}>
       {children}
     </h4>
   );
@@ -57,7 +57,7 @@ export const CardTitle = ({ className, children }) => {
 
 export const CardDescription = ({ className, children }) => {
   return (
-    <p className={cn("mt-8 text-white tracking-wide leading-relaxed text-sm", className)}>
+    <p className={cn("mt-8 text-white font6 tracking-wide leading-relaxed text-sm", className)}>
       {children}
     </p>
   );

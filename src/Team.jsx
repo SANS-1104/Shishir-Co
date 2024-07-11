@@ -4,7 +4,7 @@ import LayoutGridDemo from "./GridLayout"
 export default function Team(){
     return(
         <div className="Team-cont flex flex-col flex-wrap justify-center items-center">
-            <div className="head text-5xl mt-20 px-4 font-bold flex flex-wrap justify-center items-center" id='team'>
+            <div className="head text-5xl mt-20 px-8 font-bold flex flex-wrap justify-center items-center font1" id='team'>
                 <div className="mr-4">Meet</div>
                 <div className="mr-4">Our</div>
                 <div className="mr-4">Team</div>
