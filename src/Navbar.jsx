@@ -17,7 +17,7 @@ export default function Navbar(){
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#team">Team</a>
-                <a href="#contact">Contact Us</a>
+                <a href="#contact">Contact</a>
                 <button onClick={showNavBar} className='nav-btn nav-close-btn'>
                     <FaTimes />
                 </button>

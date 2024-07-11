@@ -9,112 +9,12 @@
     text-decoration: underline;
 }
 
-.a{
-    text-align: center;
-    font-weight: bold;
-    width: 40px;
-    height: 40px;
-    left: -8.5px;
-    top: 0.01px;
-    margin-right: 0.5rem;
-    background: linear-gradient(47.19deg, #9C53F9 14.44%, #F1E8FF 86.22%);
-    border-radius: 0px 20px;
+.hero-img img{
+    width: 30rem;
+    height: 20rem;
 }
 
-
-.support-img-cont .si .each{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    flex-wrap: wrap;
-    border-radius: 1rem;
-    flex-direction: column;
-    padding: 0.1rem 0.5rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    animation: transform 5s ease-in-out 0;
-}
-
-.support-img-cont .si .each:hover{
-    transform: scale(1.2);
-    box-shadow:none;
-    /* border:2px solid black; */
-}
-
-/* Default styles */
-.title {
-    font-size: 1rem; /* Adjust this value as needed */
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .title {
-        font-size: 0.5em; /* Adjust this value as needed for smaller screens */
-    }
-    .a{
-        font-size: 0.4em;
-        font-weight: bold;
-        width: 20px;
-    }
-    .support-img-cont .si .each{
-        width: fit-content;
-        
-    }
-    .support-img-cont{
-        width: 100%;
-        margin-top: 1rem;
-    }
-    .support-img-cont .si{
-        transform: scale(0.5);
-     }
-}
-
-@media (max-width: 640px) {
-    .title {
-        font-size: 0.25em; /* Adjust this value as needed for smaller screens */
-    }
-    .a{
-        font-size: 0.2em;
-        font-weight: bold;
-        width: 15px;
-    }
-    .support-img-cont .si .each{
-        width: fit-content;
-        
-    }
-    .support-img-cont{
-        width: 100%;
-        margin-top: 1rem;
-    }
-    .support-img-cont .si{
-       transform: scale(0.3);
-    }
-}
-
-@media (max-width: 300px) {
-    .title {
-        font-size: 0.125em; /* Adjust this value as needed for smaller screens */
-    }
-    .a{
-        font-size: 0.1em;
-        font-weight: bold;
-        width: 7px;
-    }
-    .support-img-cont .si .each{
-        width: fit-content;
-        
-    }
-    .support-img-cont{
-        width: 100%;
-        margin-top: 1rem;
-    }
-    .support-img-cont .si{
-        transform: scale(0.2);
-     }
-}
-
-
-.support-img-cont .si{
+.hero-img{
     animation: top-down 5s ease-in-out 0s infinite normal both;
 }
 

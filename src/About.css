@@ -2,6 +2,12 @@
     background-color: #567EFF;
 }
 
+@media only screen and (max-width : 1024px) {
+    .p2{
+        display: none;
+    }
+}
+
 .commit-btn{
     color: #567EFF;
     animation: top-down 5s ease-in-out 0s infinite normal both;

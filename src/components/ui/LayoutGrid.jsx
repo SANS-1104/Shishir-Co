@@ -21,7 +21,7 @@ export default function LayoutGrid({ cards }) {
   };
 
   return (
-    <div className="w-full h-full p-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 max-w-full max-h-full mx-auto  gap-auto relative">
+    <div className="w-full h-full p-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 max-w-full max-h-full mx-auto ml-5 gap-auto relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "relative")}>
           <motion.div
