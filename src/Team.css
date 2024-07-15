@@ -4,6 +4,10 @@
 .text-color{
     color: #012AB1;
 }
+
+.text-color:hover{
+    color: #012AB1;
+}
 .content-clr{
     color: #0000FB;
 }
@@ -13,9 +17,52 @@
     border-radius: 20px;
 }
 
-.grid-img-cont .grid-img{
-    width: 90%;
+.d-f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+.card-bg{
+    background-color: #D3DEF7;
+    width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+
+
+.team-mem img{
+    width: 22rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    position: absolute;
+    top: 0;
+}
+
+.team-mem p{
+    position: relative;
+    top: 4rem;
+    padding-left: 1rem;
+    font-size: 14px;
+    margin-bottom: 0.4rem;
+}
+
+.card-height-width{
+    height: 32rem;
+    width: 22rem;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.team-inner-cont{
+    width: 80%;
+}
+
+
 
 @media only screen and (max-width : 1024px) {
     .card-font{
