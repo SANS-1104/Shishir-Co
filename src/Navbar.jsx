@@ -14,10 +14,9 @@ export default function Navbar(){
         <header>
             <img src={logo} alt="Logo" className='logo'/>
             <nav ref={navRef}>
-                <a href="#about">About</a>
+                <a href="#team">Our Team</a>
+                <a href="#">GST</a>
                 <a href="#services">Services</a>
-                <a href="#team">Team</a>
-                <a href="#contact">Contact</a>
                 <button onClick={showNavBar} className='nav-btn nav-close-btn'>
                     <FaTimes />
                 </button>

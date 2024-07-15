@@ -1,6 +1,17 @@
 .Team-cont .head{
     color: #022083;
 }
+.text-color{
+    color: #012AB1;
+}
+.content-clr{
+    color: #0000FB;
+}
+
+.card-border-clr{
+    border: 2px solid #0000FB;
+    border-radius: 20px;
+}
 
 .grid-img-cont .grid-img{
     width: 90%;
