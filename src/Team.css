@@ -72,5 +72,11 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .small-screen-margin{
+        margin-right: 5rem;
+        padding-right: 4rem;
+        position: absolute;
+        right: 2rem;
+    }
 
 }
