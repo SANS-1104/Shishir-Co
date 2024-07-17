@@ -10,7 +10,7 @@ import './Team.css'
 export default function TeamGrid(){
     return(
         <div className='d-f'>
-            <div className='d-f team-inner-cont'>
+            <div className='d-f team-inner-cont justify-start'>
                 <GlareCard className="team-mem flex flex-col px-2 justify-center">
                     {/* 1 */}
                     <img className="h-2/5 w-full absolute inset-0 bg-contain"

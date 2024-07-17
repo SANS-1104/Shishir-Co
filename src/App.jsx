@@ -18,9 +18,9 @@ function App() {
       <About />
       <Services />
       <Team />
-      {/* <Commit /> */}
+      <Commit />
       {/* <GlareCardDemo /> */}
-      <BackgroundBoxesDemo />
+      {/* <BackgroundBoxesDemo /> */}
       <Footer />
     </>
     
