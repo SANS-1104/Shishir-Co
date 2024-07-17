@@ -63,7 +63,11 @@ export default function GlareCard({ children, className }){
   return (
     <div
       style={containerStyle}
+<<<<<<< HEAD
       className="relative each-card isolate mr-12 ml-12 [contain:layout_style] [perspective:600px] transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-transform w-[320px] [aspect-ratio:17/21]"
+=======
+      className="relative isolate small-screen-margin mr-12 ml-12 [contain:layout_style] [perspective:600px] transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-transform w-[320px] [aspect-ratio:17/21]"
+>>>>>>> acc567fb8820d557b150bf6a4d79af5f5db251dd
       ref={refElement}
       onPointerMove={(event) => {
         const rotateFactor = 0.4;

@@ -72,8 +72,17 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+<<<<<<< HEAD
     /* .card-height-width{
         transform: scale(0.5);
     } */
+=======
+    .small-screen-margin{
+        margin-right: 5rem;
+        padding-right: 4rem;
+        position: absolute;
+        right: 2rem;
+    }
+>>>>>>> acc567fb8820d557b150bf6a4d79af5f5db251dd
 
 }
