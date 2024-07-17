@@ -1,10 +1,10 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import "./Footer.css";
 
 
 export default function Footer(){
   return (
-    <footer className={` main-footer-data bg-lavender overflow-hidden flex flex-row items-start justify-between   px-32 text-left text-darkslateblue ${className}`}>
+    <footer className={` main-footer-data bg-lavender overflow-hidden flex flex-row items-start justify-between   px-32 text-left text-darkslateblue `}>
       <div className="flex flex-col items-start justify-between w-full">
         <div className=" footer-data flex flex-wrap items-center justify-between w-full">
           <div className=" flex flex-col items-start justify-start py-5 px-0 ">
@@ -90,7 +90,7 @@ export default function Footer(){
   );
 };
 
-Footer.propTypes = {
-  className: PropTypes.string,
-};
+// Footer.propTypes = {
+//   className: PropTypes.string,
+// };
 
