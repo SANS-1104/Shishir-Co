@@ -18,6 +18,9 @@
     color: #567EFF;
     animation: top-down 5s ease-in-out 0s infinite normal both;
 }
+.commit-btn a:hover{
+    color: #567EFF;
+}
 
 .bg-color{
     background-color: #567EFF;
