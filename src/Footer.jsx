@@ -42,7 +42,7 @@ export default function Footer(){
                   </div>
                 </div>
               </div>
-              <div className="  relative text-xs flex flex-wrap font-medium">
+              <div className="  relative text-sm flex flex-wrap font-medium">
                 <div className="footer-hover"><a href="mailto: Shishirandco01@gmail.com">Shishirandco01@gmail.com | </a></div>
                 <div className="footer-hover"><a href="telto: +91-7499264357">&nbsp; +91-7499264357 | </a></div>
                 <div className="footer-hover"><a href="telto: 0551-3561840">&nbsp;0551-3561840</a></div>
@@ -53,19 +53,19 @@ export default function Footer(){
             <b className="relative text-xl  mb-4 flex items-center ">
               Solutions
             </b>
-            <div className="relative   inline-block ">
+            <div className="relative mb-2  inline-block ">
               Direct Taxation
             </div>
-            <div className="relative   inline-block ">
+            <div className="relative  mb-2   inline-block ">
               Business Advisory
             </div>
-            <div className="relative   inline-block">
+            <div className="relative mb-2    inline-block">
               GST Filling
             </div>
-            <div className="relative   inline-block ">
+            <div className="relative mb-2    inline-block ">
               Corporate Advisory
             </div>
-            <div className="relative   inline-block ">
+            <div className="relative  mb-2   inline-block ">
               Consulting
             </div>
             <div className="relative   font-dm-sans">Audit & Assurance</div>
