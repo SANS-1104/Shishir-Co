@@ -19,7 +19,7 @@ export default function Commit() {
               type="submit"
               className="underline bg-white commit-btn px-8 py-2"
             >
-              Contact Now
+              <a href="mailto: Shishirandco01@gmail.com">Contact Now</a>
             </button>
           </a>
         </div>
