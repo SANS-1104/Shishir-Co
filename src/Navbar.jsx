@@ -12,11 +12,11 @@ export default function Navbar(){
     }
     return(
         <header>
-            <img src={logo} alt="Logo" className='logo'/>
+            <a href="/"><img src={logo} alt="Logo" className='logo'/></a>
             <nav ref={navRef}>
-                <a href="#team">Our Team</a>
-                <a href="#">GST</a>
-                <a href="#services">Services</a>
+                <a href="/team" className="mr-2" >Our Team</a>
+                <a href="/gst" className="mr-2">GST</a>
+                <a href="/services">Services</a>
                 <button onClick={showNavBar} className='nav-btn nav-close-btn'>
                     <FaTimes />
                 </button>

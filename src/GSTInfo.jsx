@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+import './GSTInfo.css'
 
 const GSTInfo = ({ className = "" }) => {
   return (
     <div className={` flex flex-col flex-wrap items-center justify-center text-center text-21xl w-4/5 text-midnightblue  ${className}`}>
       <div className="  flex flex-col  flex-wrap items-start justify-start mb-8 ">
-        <h1 className="mb-8 flex items-center justify-center flex-wrap w-full font-bold ">
+        <h1 className="mb-8 flex items-center justify-center flex-wrap w-full font-bold GST-HEADING">
           Let’s Know More About GST
         </h1>
         <div className="   text-xl  text-justify ">
@@ -31,7 +32,7 @@ const GSTInfo = ({ className = "" }) => {
         </div>
       </div>
       <div className="  flex flex-col  flex-wrap items-start justify-start">
-        <h1 className="mb-8 mt-8 flex items-center justify-center flex-wrap w-full font-bold ">
+        <h1 className="mb-8 mt-8 flex items-center justify-center flex-wrap w-full font-bold GST-HEADING">
           Is Your Organisation GST Ready?
         </h1>
         <div className="    text-xl font-medium text-left">
@@ -50,7 +51,7 @@ const GSTInfo = ({ className = "" }) => {
         </div>
       </div>
       <div className="  flex flex-col flex-wrap  items-start justify-start mb-8">
-        <h1 className="mb-12 mt-16 flex items-center justify-center flex-wrap w-full font-bold ">
+        <h1 className="mb-12 mt-16 flex items-center justify-center flex-wrap w-full font-bold GST-HEADING">
           How We Help You In Your GST Matters
         </h1>
         <div className="  text-xl font-medium text-justify mb-12">

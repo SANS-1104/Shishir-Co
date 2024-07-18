@@ -4,14 +4,14 @@ import "./Footer.css";
 
 export default function Footer(){
   return (
-    <footer className={` main-footer-data bg-lavender overflow-hidden flex flex-row items-start justify-between   px-32 text-left text-darkslateblue `}>
+    <footer className="main-footer-data bg-lavender overflow-hidden flex flex-row items-start justify-between px-32 text-left text-darkslateblue">
       <div className="flex flex-col items-start justify-between w-full">
         <div className=" footer-data flex flex-wrap items-center justify-between w-full">
           <div className=" flex flex-col items-start justify-start py-5 px-0 ">
             <div className=" flex flex-col items-start justify-start ">
               <div className="  flex flex-col items-start justify-start ">
-                <h2 className="m-0 mb-2  text-9xl font-bold  ">{`SHISHIR & Co.`}</h2>
-                <h3 className="m-0   relative text-5xl  font-bold">
+                <h2 className="m-0 mb-2  text-3xl font-bold  ">Shishir & Co.</h2>
+                <h3 className="m-0   relative text-2xl  font-bold">
                   Chartered Accountants
                 </h3>
               </div>
@@ -38,17 +38,14 @@ export default function Footer(){
                 <div className=" relative flex items-center shrink-0">
                   <div className="mb-2">
                     <b>Branches:</b>
-                    <div className="font-medium">{` Lucknow, Maharajganj & Deoria`}</div>
+                    <div className="font-medium">Lucknow, Maharajganj & Deoria</div>
                   </div>
                 </div>
               </div>
               <div className="  relative text-xs flex flex-wrap font-medium">
-                <div className=""><a href="mailto: Shishirandco01@gmail.com">Shishirandco01@gmail.com | </a></div>
-                <div className=""><a href="telto: +91-7499264357">&nbsp; +91-7499264357 | </a></div>
-                <div className=""><a href="telto: 0551-3561840">&nbsp;0551-3561840</a></div>
-                {/* <p className="m-0 whitespace-pre-wrap">
-                  Shishirandco01@gmail.com | +91-7499264357, 0551-3561840
-                </p> */}
+                <div className="footer-hover"><a href="mailto: Shishirandco01@gmail.com">Shishirandco01@gmail.com | </a></div>
+                <div className="footer-hover"><a href="telto: +91-7499264357">&nbsp; +91-7499264357 | </a></div>
+                <div className="footer-hover"><a href="telto: 0551-3561840">&nbsp;0551-3561840</a></div>
               </div>
             </div>
           </div>
@@ -71,19 +68,14 @@ export default function Footer(){
             <div className="relative   inline-block ">
               Consulting
             </div>
-            <div className="relative   font-dm-sans">{`Audit & Assurance`}</div>
+            <div className="relative   font-dm-sans">Audit & Assurance</div>
           </div>
         </div>
+        <hr className="w-full bg-black h-1" />
         <div className=" flex flex-col items-start justify-start text-base">
-          <img
-            className="  relative max-w-full overflow-hidden max-h-full"
-            loading="lazy"
-            alt=""
-            src="/vector-9.svg"
-          />
+         
           <div className="pb-4 w-full">
-            <hr className="w-full" />
-            {`© 2024 Shishit & Co. All rights reserved.`}</div>
+            &copy; 2024 Shishit & Co. All rights reserved.</div>
         </div>
       </div>
     </footer>

@@ -1,5 +1,7 @@
-.footer-bg{
+.main-footer-data{
     background-color: #D3DEF7;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .txt{
     color: #392D82;
@@ -27,7 +29,9 @@
 .x{
     color: rgb(175, 168, 168);
 }
-
+.footer-hover a:hover{
+    color: #392D82;
+}
 
 @media only screen and (max-width : 1024px) {
     .footer-data{

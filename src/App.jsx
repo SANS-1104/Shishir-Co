@@ -1,30 +1,25 @@
-import Navbar from "./Navbar"
-import IntroPage from "./IntroPage"
-import About from "./About"
-import Services from "./Services"
-import Team from "./Team"
-import Commit from "./Commit"
-// import GlareCardDemo from "./GlareCardOp"
-import BackgroundBoxesDemo from "./BoxEffect"
-import Footer from "./Footer"
-import { ImOffice } from "react-icons/im"
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import GST from './GST';
+import ServicePage from './ServicePage';
+import TeamPage from './TeamPage';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 function App() {
-
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <IntroPage />
-      <About />
-      <Services />
-      <Team />
-      <Commit />
-      {/* <GlareCardDemo /> */}
-      {/* <BackgroundBoxesDemo /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gst" element={<GST />} />
+        <Route path="/team" element={<TeamPage />} />
+        <Route path="/services" element={<ServicePage />} />
+      </Routes>
       <Footer />
-    </>
-    
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

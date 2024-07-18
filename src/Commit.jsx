@@ -5,7 +5,7 @@ import './About.css'
 export default function Commit() {
   return (
     <div
-      className="abt-cont text-white mb-20 flex flex-wrap justify-between items-center px-20"
+      className="abt-cont text-white mb-60 mt-20 flex flex-wrap justify-between items-center px-20"
       id="contact"
     >
       <div className="about flex flex-wrap w-full justify-center items-center flex-col pt-12 pb-12 pl-8 pr-8">

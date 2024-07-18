@@ -1,5 +1,4 @@
 import './IntroPage.css'
-import heroImg from './assets/heroImg.png'
 import AuroraBackgroundDemo from './HeroTextBg'
 
 export default function IntroPage(){

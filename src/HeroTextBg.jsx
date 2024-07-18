@@ -28,7 +28,7 @@ export default function AuroraBackgroundDemo() {
         “Trusted advisors helping you navigate the <br /> complexities of finance”
         </div>
         <button className="btn-bg rounded-4 w-fit underline text-white px-8 py-2">
-          Contact Now
+        <a href="mailto: Shishirandco01@gmail.com">Contact Now</a>
         </button>
         
       </motion.div>
