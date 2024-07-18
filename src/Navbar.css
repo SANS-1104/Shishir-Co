@@ -11,6 +11,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
+    padding-right: 4rem;
     width: 100%;
     z-index: 100;
     top: 0;
@@ -62,9 +63,11 @@ header .nav-btn{
 
 
 @media only screen and (max-width : 1024px) {
+    
     header .nav-btn{
         visibility: visible;
         opacity: 1;
+        
     }
     header nav{
         position: fixed;
@@ -77,7 +80,7 @@ header .nav-btn{
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        background-color: #D4E1FF;
+        background-color: rgba(255, 255, 255, 1);
         z-index: 100;
         transition: 1s;
         transform: translateY(-100vh)      
@@ -90,12 +93,11 @@ header .nav-btn{
     nav .nav-close-btn{
         position: absolute;
         top: 1rem;
-        right: 2rem;
+        right: 3rem;
     }
     nav a{
         font-size: 1rem;
         margin: 3rem 0.5rem 0;
         font-weight: normal;
     }
-
 }

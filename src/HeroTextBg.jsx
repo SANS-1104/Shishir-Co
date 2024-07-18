@@ -18,7 +18,7 @@ export default function AuroraBackgroundDemo() {
           ease: "easeInOut",
         }}
         className="relative flex flex-col items-start justify-center px-4">
-        <div className="text-5xl md:text-6xl font-bold text-color text-center">
+        <div className="text-5xl md:text-6xl font-bold text-color text-center shishir-intro-heading">
           Shishir & Co.
         </div>
         <div className="font-bold text-4xl md:text-3xl text-color py-2">
