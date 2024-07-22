@@ -6,6 +6,8 @@ import ServicePage from './ServicePage';
 import TeamPage from './TeamPage';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import WhoWeAre from './WhoWeArePage';
+import Contact from './ContactPage';
 
 function App() {
   return (
@@ -13,9 +15,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+   
         <Route path="/gst" element={<GST />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/services" element={<ServicePage />} />
+        
       </Routes>
       <Footer />
     </BrowserRouter>
